@@ -1,6 +1,7 @@
 name: Health Tests
 description: Run the health tests
 runs:
+  using: composite
   steps:
     - run: npm ci
       shell: bash
