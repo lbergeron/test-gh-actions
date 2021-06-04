@@ -1,0 +1,10 @@
+name: Performance Tests
+description: Run the performance tests
+runs:
+  using: composite
+  steps:
+    - run: npm ci
+      shell: bash
+    
+    - run: npm run test:perf
+      shell: bash

@@ -1,0 +1,10 @@
+name: Health Tests
+description: Run the health tests
+runs:
+  using: composite
+  steps:
+    - run: npm ci
+      shell: bash
+    
+    - run: npm run test:health
+      shell: bash
