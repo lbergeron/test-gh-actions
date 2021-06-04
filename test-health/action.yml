@@ -1,0 +1,7 @@
+name: Health Tests
+description: Run the health tests
+runs:
+  steps:
+    - run: npm ci
+    
+    - run: npm run test:health
