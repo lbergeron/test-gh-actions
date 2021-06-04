@@ -3,5 +3,7 @@ description: Run the performance tests
 runs:
   steps:
     - run: npm ci
+      shell: bash
     
     - run: npm run test:perf
+      shell: bash

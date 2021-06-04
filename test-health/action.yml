@@ -3,5 +3,7 @@ description: Run the health tests
 runs:
   steps:
     - run: npm ci
+      shell: bash
     
     - run: npm run test:health
+      shell: bash
